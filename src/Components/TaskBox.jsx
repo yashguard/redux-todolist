@@ -28,7 +28,7 @@ const TaskBox = () => {
 
 
   const finduser = (data) => {
-    let val = data.filter((users) => users.email === getEmail)
+    let val = data.filter((users) => users.email === prodata[0].email)
     if (val.length > 0) {
       val.map((filuser) => {
         let user = filuser

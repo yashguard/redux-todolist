@@ -11,7 +11,6 @@ const SignIn = () => {
       localStorage.setItem("Email", userdetails._tokenResponse.email);
       DispatchEmail(AddEmail(userdetails._tokenResponse.email));
     });
-    document.location.reload();
   };
   return (
     <center>
