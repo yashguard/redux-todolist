@@ -34,9 +34,6 @@ const TaskBox = () => {
         let user = filuser
         DispatchData(Add(user.todo, user.id))
         setUser(user)
-        setTimeout(() => {
-          document.location.reload();
-        }, 1000);
       })
     }
     else {
@@ -51,6 +48,7 @@ const TaskBox = () => {
   };
   useEffect(() => {
     GetData();
+    document.location.reload();
   }, []);
   const addTodo = () => {
     todos.push({
