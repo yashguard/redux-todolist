@@ -36,7 +36,7 @@ const TaskBox = () => {
         setUser(user)
         setTimeout(() => {
           document.location.reload();
-        }, 0);
+        }, 1000);
       })
     }
     else {
