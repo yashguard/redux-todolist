@@ -34,6 +34,9 @@ const TaskBox = () => {
         let user = filuser
         DispatchData(Add(user.todo, user.id))
         setUser(user)
+        setTimeout(() => {
+          document.location.reload();
+        }, 0);
       })
     }
     else {
@@ -44,7 +47,6 @@ const TaskBox = () => {
   const GetData = () => {
     axios.get(`https://crazy-lingerie-bat.cyclic.app/users`).then((response) => {
       finduser(response.data)
-
     });
   };
   useEffect(() => {
