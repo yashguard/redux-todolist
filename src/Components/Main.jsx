@@ -7,7 +7,7 @@ const Main = () => {
   let localemail = localStorage.getItem("Email");
   return (
     <div className="main-box">
-      {localemail === "" || proemail === "" ? <SignIn /> : <TaskBox />}
+      {localemail === "" || proemail === "" || !localemail ? <SignIn /> : <TaskBox />}
     </div>
   );
 };
