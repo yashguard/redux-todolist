@@ -48,7 +48,6 @@ const TaskBox = () => {
   };
   useEffect(() => {
     GetData();
-    document.location.reload();
   }, []);
   const addTodo = () => {
     todos.push({
