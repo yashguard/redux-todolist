@@ -5,7 +5,7 @@ import { Add } from "../Redux/Action";
 
 const List = ({ TaskName, date }) => {
   const GetData = () => {
-    axios.get(`http://localhost:3001/users`);
+    axios.get(`https://crazy-lingerie-bat.cyclic.app/users`);
   };
   useEffect(() => {
     GetData();
